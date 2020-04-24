@@ -6,12 +6,11 @@ def main():
     answeredwords=[]
     puzzleletters, central_letter, solutionwords = new_puzzle()
     
-
     print('Welcome to Spelling Bee\nGuess the answers,\n \'exit\' to stop')
     print('Puzzle Letters: ' +str(puzzleletters))
     print('Central Letter: ' + central_letter)
 
-    print('Anwers: '+ str(solutionwords))
+    # print('Anwers: '+ str(solutionwords))
     while still_playing:
         user_guess = input('Next guess: ')
         if user_guess.isalpha() and len(user_guess)>3:
@@ -57,7 +56,7 @@ def new_puzzle():
     random.shuffle(puzzleletters)
     #randomly choose a letter as central letter
     central_letter = random.choice(puzzleletters)
-    # puzzleletters, central_letter = ['','','','','','',''], ''
+    #puzzleletters, central_letter = ['','','','','','',''], ''
 
     for word in viablewords:
         bad_letter=False
