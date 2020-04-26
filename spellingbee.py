@@ -34,7 +34,7 @@ def main():
             still_playing=False
 
 def new_puzzle():
-    f=open("F:\\Documents\\GitHub\\nyt_spellingbee\\dictionary.csv","r")
+    f=open("dictionary.csv","r")
     allwords = f.read().split('\n')
     viablewords=[] #words that can be answers in the game
     puzzlewords=[] #words that can be puzzles in the game
